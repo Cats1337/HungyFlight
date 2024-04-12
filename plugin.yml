@@ -1,0 +1,12 @@
+name: HungyFlight
+version: '1.0'
+main: io.github.cats1337.hungyflight.HungyFlight
+api-version: '1.20'
+authors:
+  - Cats
+description: 'Refactored, and Updated version of FlyWithFood'
+commands:
+  fly:
+    usage: '/fly'
+  flyadmin:
+    usage: '/flyadmin'

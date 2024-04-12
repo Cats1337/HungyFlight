@@ -1,0 +1,96 @@
+# Config-version, do not change this.
+Config-Version: 1.0
+
+message:
+  # Only players can fly, not console.
+  notplayer: 'You must be a player to do that!'
+  # No permission message.
+  no-permission: '&cYou do not have permission!'
+  # Player is not found.
+  invalidplayer: '&cInvalid player.'
+  # Toggling your own flight ON.
+  fly-on: '&e&lFlight &a&lenabled&e&l! &7&oWatch your hunger.'
+  # Toggling your own flight OFF.
+  fly-off: '&e&lFly &c&ldisabled&e&l!'
+  # Toggle ON other's flight message.
+  flyother-on: '&e&lToggled Players Flight &a&lon&e&l!'
+  # Toggle OFF other's flight message.
+  flyother-off: '&e&lToggled Players Flight &c&loff&e&l!'
+  # Auto-disable message.
+  auto-disable: '&cYou got too hungy to fly. :('
+  # Low hunger message. when trying to turn flight on.
+  lowhunger: '&cYou are too hungy to fly. :('
+  # Target player is too hungry to fly.
+  targetlowhunger: '&cPlayer cannot fly, they too hungy.'
+  help:
+    top: '&b&m                                      '
+    plugin: '&b&lHungyFly'
+    fly: '&a/fly &eToggle your flight'
+    flyother: '&a/fly <player> &eToggle a player flight'
+    reload: '&a/flyadmin reload &eReload config'
+    bottom: '&b&m                                      '
+  # Config reloaded message.
+  adminhelp-reloadconfig: '&aConfiguration reloaded successful!'
+  # Invalid command message.
+  adminhelp-invalid: '&cInvalid, type /flyadmin to view help'
+  # Flying actionbar
+  Actionbar:
+    # Enable = true, Disable = false.
+    enable: false
+    # Flying using hunger.
+    flying: '&aFlight on, hunger draining.'
+    # Flying no cost.
+    flying-nocosthunger: '&aFlight on, no cost.'
+
+settings:
+  features:
+    Costing:
+      # Auto disable flight upon reaching this hunger. 20 = full hunger. 6 = 3 hunger bars.
+      auto-disable: 6
+      # Interval of checking player's hunger
+      Timer:
+        # Enable = true, Disable = false.
+        enable: true
+        # unit: seconds
+        time: 45
+      # Check for player's any interaction when flying.
+      Interaction:
+        # Enable = true, Disable = false.
+        enable: false
+        features:
+          # Block breaking
+          BlockBreak:
+            # Enable = true, Disable = false.
+            enable: false
+            # Hunger cost.
+            cost: 2
+          # Block placing
+          BlockPlace:
+            # Enable = true, Disable = false.
+            enable: false
+            # Hunger cost.
+            cost: 2
+          # Player attacking entity
+          Attack:
+            # Enable = true, Disable = false.
+            enable: false
+            # Hunger cost.
+            cost: 2
+          # Player getting damaged
+          Damaged:
+            # Enable = true, Disable = false.
+            enable: false
+            # Hunger cost.
+            cost: 2
+  # Groups of hunger wasting
+  groups:
+    # Default group, don't change name!
+    default:
+      # Hunger cost.
+      FoodCost: 1
+    # Second group, don't change name!
+    second:
+      # Hunger cost.
+      FoodCost: 1
+      # The permission of group, can be changed.
+      Permission: 'hungyflight.groups.second'
