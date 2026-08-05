@@ -1,8 +1,0 @@
-io\github\cats1337\hungryflight\events\Interact.class
-io\github\cats1337\hungryflight\utils\FlyToggle.class
-io\github\cats1337\hungryflight\runnable\HungerCheck.class
-io\github\cats1337\hungryflight\runnable\ActionBar.class
-io\github\cats1337\hungryflight\utils\Food.class
-io\github\cats1337\hungryflight\commands\Commands.class
-io\github\cats1337\hungryflight\HungryFlight.class
-io\github\cats1337\hungryflight\utils\ConfigUtils.class
