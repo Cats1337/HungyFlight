@@ -1,0 +1,38 @@
+name: HungryFlight
+description: $description
+version: '${version}'
+
+main: io.github.cats1337.hungryflight.HungryFlight
+api-version: '26.2'
+load: POSTWORLD
+
+authors:
+  - Cats
+
+commands:
+  fly:
+    description: Toggle flight
+    usage: /fly
+    permission: hungryflight.fly
+
+  flyadmin:
+    description: HungryFlight administration commands
+    usage: /flyadmin reload
+    permission: hungryflight.admin.reload
+
+permissions:
+  hungryflight.fly:
+    description: Allows using /fly
+    default: true
+
+  hungryflight.fly.other:
+    description: Allows toggling other players' flight
+    default: op
+
+  hungryflight.nohunger:
+    description: Allows flying without hunger cost
+    default: op
+
+  hungryflight.admin.reload:
+    description: Allows reloading HungryFlight
+    default: op
